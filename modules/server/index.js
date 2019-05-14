@@ -5,9 +5,12 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 
+const helmet = require('helmet');
+
 const app = express();
 const server = http.createServer(app);
 
+app.use(helmet())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
 app.use(logger('dev'));
