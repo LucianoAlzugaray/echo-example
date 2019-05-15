@@ -45,3 +45,8 @@ Para correr esta aplicación, basta con ejecutar los siguientes comandos:
     npm install
     npm run dev
 
+O con docker:
+
+    docker build -t echo-server .
+    docker run -p 8080:8080 -d echo-server
+

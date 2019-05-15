@@ -6,11 +6,12 @@
   "scripts": {
     "postinstall": "link-module-alias",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node modules/tests/index.js"
   },
   "_moduleAliases": {
     "~modules": "./modules",
-    "~components": "./components"
+    "~components": "./components",
+    "~root": "."
   },
   "author": "Luciano Alzugaray <lucianoalzugaray1@gmail.com>",
   "license": "ISC",
@@ -23,7 +24,10 @@
     "rc": "^1.2.8"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "link-module-alias": "^1.2.0",
-    "nodemon": "^1.19.0"
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
   }
 }
