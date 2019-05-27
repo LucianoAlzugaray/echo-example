@@ -50,3 +50,8 @@ O con docker:
     docker build -t echo-server .
     docker run -p 8080:8080 -d echo-server
 
+## Ejecutar los tests
+
+Para correr los tests, basta con ejecutar el siguiente comando:
+
+    npm run tests

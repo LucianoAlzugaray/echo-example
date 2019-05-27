@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "link-module-alias",
     "dev": "nodemon index.js",
-    "test": "node modules/tests/index.js"
+    "tests": "node modules/tests/index.js"
   },
   "_moduleAliases": {
     "~modules": "./modules",
